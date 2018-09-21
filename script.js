@@ -7,7 +7,7 @@ var tempElem = document.getElementById('temp')
 var weatherPagi = document.getElementById('weather-pagi')
 var contentElem = document.getElementById('content')
 // var containerElem = document.getElementById('container')
-var uRl = `http://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${appsId}&units=metric`
+var uRl = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${appsId}&units=metric`
 var uRlForecast = `http://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${appsId}&units=metric`
 var currentDate = new Date()
 var daysName = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu']
