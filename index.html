@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather Apps</title>
+</head>
+<style>
+  .container {
+    /* display: inline-grid; */
+    min-width: 20vw;
+  }
+  .weather {
+    border: 1px solid black;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+    min-width: 20vw;
+  }
+  .weather.forecast {
+    margin: 3px;
+  }
+  .detailWeather {
+    display: inline-flex
+  }
+  .temp {
+    padding: 2px;
+    font-size: 25px;
+  }
+  .list {
+    list-style: none;
+    padding: 10px;
+    background: #ddd;
+    width: 100%;
+    flex-flow: wrap;
+    display: flex;
+    margin: 2px;
+  }
+  .box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    flex-direction: column;
+    display: inline-grid;
+    flex-flow: wrap;
+    margin: 1px;
+    min-width: 20vw;
+  }
+  .days-temp {
+    display: inline-flex;
+  }
+  .detail {
+    padding: 5px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+</style>
+<body>
+  <div id='content'>
+    <div id='weather' class="weather">
+      <h3>Weather in <span id='city'></span></h3>
+      <div class='detailWeather'>
+        <img id='icon' />
+        <span class="temp" id='temp'></span>
+      </div>
+      <div class='desc'>Deskripsi : <span id='desc'>Cloudy</span></div>
+      <div class='desc'>Humidity : <span id='humidity'>73%</span></div>
+    </div>
+    <div class="">
+
+    </div>
+    <!-- <section class="container" id='container'>
+      <h2>Hari</h2>
+    </section> -->
+    <!-- <section class="container">
+      <div ondragover="allowDrop(event)" ondrop="dropList(event)" id="todo">
+        <h2>todo</h2>
+        <div>
+          <ul class="box" id='boxTodo'>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div ondragover="allowDrop(event)" ondrop="dropList(event)" id="todo">
+        <h2>todo</h2>
+        <div>
+          <ul class="box" id='boxTodo'>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div ondragover="allowDrop(event)" ondrop="dropList(event)" id="todo">
+        <h2>todo</h2>
+        <div>
+          <ul class="box" id='boxTodo'>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div ondragover="allowDrop(event)" ondrop="dropList(event)" id="todo">
+        <h2>todo</h2>
+        <div>
+          <ul class="box" id='boxTodo'>
+            
+          </ul>
+        </div>
+      </div>
+    </section> -->
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
